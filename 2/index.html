@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="box_sign_up ">
+        <header class="header">Create your account</header>
+        <form name="sign_up">
+            <div class = "wrapper">
+                <div>
+                    <label for="first_name_text" class="name_form">First Name</label>
+                    <input type="text" placeholder="type here..." class="first_name_text" name="first_name_text"required>
+                </div>
+                <div>
+                    <label for="second_name_text" class="name_form">Second Name</label>
+                    <input type="text" placeholder="type here..." class="second_name_text" name="second_name_text"required>
+                </div>
+                <div>
+                    <label for="email_name_text" class="name_form">Email</label>
+                    <input type="text" placeholder="type here..." class="email_name_text" name="email_name_text"required>
+                </div>
+               
+                <div>
+                    <label class="radio_sex"><input type="radio" name="radio_sex" id="man" value="man" checked>man</label> 
+                    <label class="radio_sex"><input type="radio" name="radio_sex" id="woman" value="woman">woman</label> 
+                </div>
+               
+                <div class="position">
+                    <label for="position" class="name_form">Position</label>
+                    <select name="Position" class="pos" required>
+                        <option value="choose..." selected>chose...</option>
+                        <option value="Frontend">Frontend</option>
+                        <option value="Backend">Backend</option>
+                        <option value="QC/QA">QC/QA</option>
+                    </select>
+                </div>
+                <div class="disabled">
+                    <label><input type="checkbox" name="iAgree" class="checkbox">I agree all statements in Terms of service </label> 
+                    <input type="button" disabled="disabled" class ="big_button" name = "signup" value="Sign Up">
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="account hide">
+            <div class="header_account">
+                <div class="avatar"></div>
+            </div>
+            <div class="data">
+                <div class="person_first"></div>
+                <div class="person_second"></div>
+                <div class="person_email"></div>
+                <div class="person_position"></div>
+                <form name="sign_out" class="small_buttons">
+                    <input type="button" class ="small_button" name = "small_button" value="Sign Out">
+                </form>
+            </div>
+            <div class="footer">
+                <div class="icons">
+                    <img src="fb.png" alt="f" class="img">
+                    <img src="github.png" alt="f" class="img">
+                    <img src="Li.png" alt="f" class="img">
+                </div>
+            </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
